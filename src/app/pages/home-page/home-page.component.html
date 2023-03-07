@@ -1,0 +1,89 @@
+<div>
+    <!--  CATEGORY -->
+  <section class="mx-auto">
+    <!-- title -->
+    <div class="font-semibold">
+      <h3 class="text-lg font-bold">Browse by Category</h3>
+    </div>
+    <!-- cards -->
+    <div class="mx-auto justify-items-center justify-center">
+      <ul class="mt-5 flex grid xl:grid-cols-10 sm:grid-cols-2 lg:grid-cols-4 md:grid-cols-3">
+        <li class="p-2 h-36 w-28 mx-auto rounded-xl flex flex-col items-center justify-center text-center duration-300 hover:bg-white hover:shadow-2xl">
+          <img
+            class="max-h-26"
+            src="/assets/icons/1.png" alt="" />
+          <span class="font-semibold">Category name</span>
+        </li>
+        <li class="p-2 h-36 w-28 mx-auto rounded-xl flex flex-col items-center justify-center text-center duration-300 hover:bg-white hover:shadow-2xl">
+          <img
+            class="max-h-26"
+            src="/assets/icons/2.png" alt="" />
+          <span class="font-semibold">Category name</span>
+        </li>
+        <li class="p-2 h-36 w-28 mx-auto rounded-xl flex flex-col items-center justify-center text-center duration-300 hover:bg-white hover:shadow-2xl">
+          <img
+            class="max-h-26"
+            src="/assets/icons/3.png" alt="" />
+          <span class="font-semibold">Category name</span>
+        </li>
+        <li class="p-2 h-36 w-28 mx-auto rounded-xl flex flex-col items-center justify-center text-center duration-300 hover:bg-white hover:shadow-2xl">
+          <img
+            class="max-h-26"
+            src="/assets/icons/4.png" alt="" />
+          <span class="font-semibold">Category name</span>
+        </li>
+        <li class="p-2 h-36 w-28 mx-auto rounded-xl flex flex-col items-center justify-center text-center duration-300 hover:bg-white hover:shadow-2xl">
+          <img
+            class="max-h-26"
+            src="/assets/icons/5.png" alt="" />
+          <span class="font-semibold">Category name</span>
+        </li>
+        <li class="p-2 h-36 w-28 mx-auto rounded-xl flex flex-col items-center justify-center text-center duration-300 hover:bg-white hover:shadow-2xl">
+          <img
+            class="max-h-26"
+            src="/assets/icons/6.png" alt="" />
+          <span class="font-semibold">Category name</span>
+        </li>
+        <li class="p-2 h-36 w-28 mx-auto rounded-xl flex flex-col items-center justify-center text-center duration-300 hover:bg-white hover:shadow-2xl">
+          <img
+            class="max-h-26"
+            src="/assets/icons/7.png" alt="" />
+          <span class="font-semibold">Category name</span>
+        </li><li class="p-2 h-36 w-28 mx-auto rounded-xl flex flex-col items-center justify-center text-center duration-300 hover:bg-white hover:shadow-2xl">
+        <img
+          class="max-h-26"
+          src="/assets/icons/8.png" alt="" />
+        <span class="font-semibold">Category name</span>
+      </li>
+        <li class="p-2 h-36 w-28 mx-auto rounded-xl flex flex-col items-center justify-center text-center duration-300 hover:bg-white hover:shadow-2xl">
+          <img
+            class="max-h-26"
+            src="/assets/icons/9.png" alt="" />
+          <span class="font-semibold">Category name</span>
+        </li>
+        <li class="p-2 h-36 w-28 mx-auto rounded-xl flex flex-col items-center justify-center text-center duration-300 hover:bg-white hover:shadow-2xl">
+          <img
+            class="max-h-26"
+            src="/assets/icons/10.png" alt="" />
+          <span class="font-semibold">Category name</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <div>
+    <div
+      class="mt-20 max-w-full mx-auto grid xl:grid-cols-5 grid-cols-1 lg:grid-cols-3 md:grid-cols-2 justify-items-center justify-center gap-y-20 gap-x-14 mt-10 mb-5"
+    >
+      <app-product
+        *ngFor="let product of productsService.products | filterProducts:term; let i = index"
+        [product]="product"
+      >
+      </app-product>
+    </div>
+
+  </div>
+
+</div>
+
+

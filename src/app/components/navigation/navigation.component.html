@@ -1,0 +1,51 @@
+<section class="navbar">
+
+  <nav class="py-4">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between">
+        <div class="flex-shrink-0">
+          <a routerLink="/" class="text-3xl text-violet-500 font-bold">
+            iziexpress
+          </a>
+        </div>
+        <div class="mx-auto w-1/2">
+          <input
+            type="text"
+            class="border rounded-3xl py-2 px-4 w-full"
+            placeholder="Filter products..."
+            [(ngModel)]="term"
+          >
+        </div>
+
+        <div class="flex items-center">
+          <div class="mr-10 sign-in">
+            <button class="hover:bg-violet-500 hover:text-white text-violet-500 font-bold py-2 px-4 rounded">
+              <a routerLink="/" class=" font-bold">
+                Sign In
+              </a>
+            </button>
+          </div>
+          <div>
+            <img src="assets/icons/shopping-cart.png">
+          </div>
+        </div>
+
+
+        <!--        <div class="flex space-x-4">-->
+        <!--          <div>-->
+        <!--            <a routerLink="/" class="text-gray-300 hover:bg-gray-700hover:text-white px-3 py-2 rounded-md text-lg font-medium">-->
+        <!--              Home-->
+        <!--            </a>-->
+        <!--            <a routerLink="/products" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-lg font-medium">-->
+        <!--              Products-->
+        <!--            </a>-->
+        <!--            <a routerLink="/about" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-lg font-medium">-->
+        <!--              About-->
+        <!--            </a>-->
+        <!--          </div>-->
+        <!--        </div>-->
+      </div>
+    </div>
+  </nav>
+
+</section>
